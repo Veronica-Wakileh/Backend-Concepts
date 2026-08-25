@@ -8,11 +8,16 @@
     <artifactId>SQL_Server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <dependencies>
+    <dependencies><!--
+Source - https://stackoverflow.com/q/26701452
+Posted by anton1980
+Retrieved 2026-08-25, License - CC BY-SA 3.0
+-->
+
         <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <version>13.4.0.jre11</version>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3</version>
         </dependency>
     </dependencies>
 
