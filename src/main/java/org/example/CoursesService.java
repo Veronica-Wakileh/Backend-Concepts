@@ -9,14 +9,17 @@ import java.util.List;
 public class CoursesService {
 
     CourseRepository courseRepository = new CourseRepository();
+    /*
     public List<Courses> GetAllCourses() {
         return courseRepository.retrieveAllCourses();
     }
+    */
 
-    public Courses GetCourse(Long id) {
+    public Courses GetCourse(Long id) throws SQLException {
         return courseRepository.retrieveCourse(id);
     }
 
+    /*
     public Courses PostCourse(String title, String description, Integer capacity) {
         if (title == null){
             // 400: title must not be blank
@@ -45,5 +48,6 @@ public class CoursesService {
     public void DeleteCourse(Long id) {
         courseRepository.deleteCourse(id);
     }
+     */
 
 }

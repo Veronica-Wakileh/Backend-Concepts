@@ -23,11 +23,11 @@ public class CourseRepository {
     }
 
     // 2
-    public Courses retrieveCourse(int id) throws SQLException {
+    public Courses retrieveCourse(Long id) throws SQLException {
 
         PreparedStatement statement = DatabaseConnection.getConnection().prepareStatement("SELECT * FROM Courses WHERE id = ?");
 
-        statement.setInt(1, id);
+        statement.setLong(1, id);
         ResultSet resultSet = statement.executeQuery();
         if (resultSet.next()) {
             return new Courses(resultSet.getString("title"), resultSet.getString("description"), resultSet.getInt("capacity"));
